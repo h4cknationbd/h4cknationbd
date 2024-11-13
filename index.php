@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H a c k e d by Cyber Defence Unit</title>
+    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/palestine-flag-icon.png" type="image/x-icon">
+    <style>
+        body {
+            background: url('https://img.freepik.com/premium-photo/palestinian-freedom-protest_1004786-6261.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.7);
+            background-blend-mode: overlay;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            cursor: pointer;
+            margin: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 2vw;
+            position: absolute;
+            top: 0;
+        }
+        .logo-middle {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .logo-middle img {
+            width: 15vw; /* Adjusted size for responsiveness */
+            animation: rotate3DLogo 5s infinite linear;
+            transform-style: preserve-3d;
+        }
+        .flag {
+            width: 10vw; /* Responsive flag size */
+        }
+        .middle-text {
+            font-size: 5vw; /* Responsive font size */
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+            line-height: 1.4;
+            color: #00FF00;
+            animation: textColorChange 5s infinite;
+            margin-top: 20vh; /* Adjusted for better centering */
+            text-align: center;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 2vw 0;
+            font-size: 2.5vw; /* Responsive footer font size */
+            color: white;
+        }
+        @keyframes textColorChange {
+            0% { color: #00FF00; }
+            25% { color: #FFD700; }
+            50% { color: #FF4500; }
+            75% { color: #00FFFF; }
+            100% { color: #FF1493; }
+        }
+        @keyframes rotate3DLogo {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+        /* Disable zoom */
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body onclick="playMusic()">
+
+    <!-- Header with flags and logo in the middle -->
+    <div class="header">
+        <div class="flag-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg" alt="Bangladesh Flag" class="flag">
+        </div>
+        <div class="logo-middle">
+            <img src="https://mrghost.serv00.net/CyberDefenceUnit.png" alt="Cyber Defence Unit Logo">
+        </div>
+        <div class="flag-right">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg" alt="Palestine Flag" class="flag">
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="middle-text">
+        <p>Hacked by</p>
+        <p>Cyber Defence Unit</p>
+        <p>We Fight for Freedom and Justice</p>
+        <p>Bangladeshi Hackers Unite for a Cause</p>
+        <p>We stand with Palestine and all oppressed nations</p>
+        <p>Our mission is to defend the innocent and attack the oppressors</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h3>
+            <span style="color:white;"> [ Surah Al-Mu’minun (23:34): | Al Quran ] </span>
+            <span style="color:red;"> Free Palestine | </span>
+            <span style="color:green;">
+                <a href="https://t.me/CyberDefenceUnit" style="text-decoration:none; color: green;">Contact Us</a>
+            </span>
+        </h3>
+    </footer>
+
+    <!-- Music -->
+    <audio id="bgMusic" preload="auto">
+        <source src="https://mrghost.serv00.net/5_6105163962494490629.mp4" type="audio/mpeg"> <!-- Music link added -->
+    </audio>
+
+    <script>
+        function playMusic() {
+            var music = document.getElementById('bgMusic');
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+</body>
+</html>
